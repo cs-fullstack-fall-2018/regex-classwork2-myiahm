@@ -1,7 +1,7 @@
 # Regular expressions class work 2
 
 ### 1. Starting with the text data below, develop a regular expression that matches the US zip code at the end of each line. Your regex should support standard 5 digit zip codes as well as '5+4' digit versions.
-
+[0-9]{1,5}?[0-9]{1,4}/g
 TEST DATA:
 ```
 College or Institution Type	Campus	Campus Website	Address	City	State	Zip
@@ -21,7 +21,7 @@ Senior Colleges	Hunter College	http://hunter.cuny.edu	695 Park Avenue	New York	N
 In honor of the binary number work you've been doing with Kenn, see if you can knock this one out:
 
 a) Match binary numbers that start and end with the same value:
-
+(^[0]*......[0]$|[1]$)/gm
 TEST DATA:
 ```
 01100001
